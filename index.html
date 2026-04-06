@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Menü Çözümleri | Dijital Menü Teklifi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .plan-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigasyon -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600"><i class="fas fa-qrcode mr-2"></i>QR Menü PRO</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#ozellikler" class="hover:text-indigo-600 transition">Özellikler</a>
+                    <a href="#demolar" class="hover:text-indigo-600 transition">Örnek Tasarımlar</a>
+                    <a href="#fiyatlar" class="hover:text-indigo-600 transition">Fiyatlandırma</a>
+                </div>
+                <div>
+                    <a href="#iletisim" class="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-700 transition">Teklif Al</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Bölümü -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6">
+                Restoranınızı <span class="text-indigo-600">Dijitalleştirin</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Kağıt menü maliyetlerinden kurtulun. Müşterileriniz telefonlarıyla menünüze anında ulaşsın, sipariş versin ve ödeme yapsın.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#demolar" class="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-gray-800">Örnekleri Gör</a>
+                <a href="#fiyatlar" class="bg-white border-2 border-gray-200 px-8 py-4 rounded-xl font-bold hover:border-indigo-500">Paketleri İncele</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Özellikler -->
+    <section id="ozellikler" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hızlı Güncelleme</h3>
+                    <p class="text-gray-500">Fiyatları ve ürünleri saniyeler içinde panelinizden değiştirin.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Çoklu Dil Desteği</h3>
+                    <p class="text-gray-500">Yabancı turistler için menünüzü otomatik olarak farklı dillere çevirin.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Uygulama Gerektirmez</h3>
+                    <p class="text-gray-500">Müşterileriniz herhangi bir uygulama indirmeden tarayıcı üzerinden kullanır.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Örnek Tasarımlar (Demolar) -->
+    <section id="demolar" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Size Özel Tasarım Seçenekleri</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tasarım 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center relative">
+                         <!-- Buraya örnek menü görseli gelecek -->
+                         <i class="fas fa-utensils text-5xl text-gray-400"></i>
+                         <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-90 transition flex items-center justify-center">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-bold">Örneği Aç</button>
+                         </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Modern Minimalist</h4>
+                        <p class="text-gray-500 text-sm">Fine-dining restoranlar için sade ve şık bir görünüm.</p>
+                    </div>
+                </div>
+                <!-- Tasarım 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center relative">
+                         <i class="fas fa-hamburger text-5xl text-gray-400"></i>
+                         <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-90 transition flex items-center justify-center">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-bold">Örneği Aç</button>
+                         </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Renkli & Dinamik</h4>
+                        <p class="text-gray-500 text-sm">Kafe, bistro ve fast-food zincirleri için ideal.</p>
+                    </div>
+                </div>
+                <!-- Tasarım 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center relative">
+                         <i class="fas fa-cocktail text-5xl text-gray-400"></i>
+                         <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-90 transition flex items-center justify-center">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-bold">Örneği Aç</button>
+                         </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Lüks Koyu Tema</h4>
+                        <p class="text-gray-500 text-sm">Gece kulüpleri ve premium barlar için özel tasarım.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fiyatlandırma -->
+    <section id="fiyatlar" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Her İşletmeye Uygun Paketler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Başlangıç -->
+                <div class="plan-card p-8 rounded-3xl border border-gray-200 bg-white">
+                    <h4 class="text-lg font-semibold mb-2">Başlangıç</h4>
+                    <div class="text-4xl font-bold mb-6">499₺ <span class="text-sm font-normal text-gray-500">/yıl</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Standart QR Menü</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Sınırsız Ürün Ekleme</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Temel Yönetim Paneli</li>
+                        <li class="text-gray-300"><i class="fas fa-times mr-2"></i> Garson Çağırma</li>
+                        <li class="text-gray-300"><i class="fas fa-times mr-2"></i> Dil Desteği</li>
+                    </ul>
+                    <button class="w-full py-3 border-2 border-gray-900 rounded-xl font-bold hover:bg-gray-900 hover:text-white transition">Hemen Başla</button>
+                </div>
+
+                <!-- Profesyonel -->
+                <div class="plan-card p-8 rounded-3xl border-2 border-indigo-600 bg-white shadow-xl relative scale-105 z-10">
+                    <div class="absolute top-0 right-8 transform -translate-y-1/2 bg-indigo-600 text-white px-4 py-1 rounded-full text-sm uppercase tracking-widest font-bold">Popüler</div>
+                    <h4 class="text-lg font-semibold mb-2 text-indigo-600">Profesyonel</h4>
+                    <div class="text-4xl font-bold mb-6">999₺ <span class="text-sm font-normal text-gray-500">/yıl</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> <b>Özel Tasarım Arayüzü</b></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Çoklu Dil Desteği (3 Dil)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Garson Çağırma Sistemi</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Gelişmiş İstatistikler</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Teknik Destek</li>
+                    </ul>
+                    <button class="w-full py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Seç ve Başla</button>
+                </div>
+
+                <!-- Kurumsal -->
+                <div class="plan-card p-8 rounded-3xl border border-gray-200 bg-white">
+                    <h4 class="text-lg font-semibold mb-2">Kurumsal</h4>
+                    <div class="text-4xl font-bold mb-6">1.999₺ <span class="text-sm font-normal text-gray-500">/yıl</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Masadan Sipariş Verme</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Online Ödeme Alma</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Özel Domain (menü.isminiz.com)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> POS Entegrasyonu</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 7/24 VIP Destek</li>
+                    </ul>
+                    <button class="w-full py-3 border-2 border-gray-900 rounded-xl font-bold hover:bg-gray-900 hover:text-white transition">İletişime Geç</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Alt Bilgi / İletişim -->
+    <footer id="iletisim" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Hemen Bugün Başlayalım mı?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Hangi paketin size uygun olduğunu bilmiyorsanız, uzman ekibimizle görüşebilirsiniz.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="https://wa.me/901234567890" class="flex items-center gap-3 bg-green-600 px-8 py-4 rounded-2xl hover:bg-green-700 transition w-full md:w-auto">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span class="font-bold italic">WhatsApp'tan Yazın</span>
+                </a>
+                <div class="text-gray-400">veya</div>
+                <div class="flex items-center gap-3 border border-gray-700 px-8 py-4 rounded-2xl">
+                    <i class="fas fa-envelope text-xl"></i>
+                    <span class="font-semibold">destek@qrmenupro.com</span>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-gray-800 text-gray-500 text-sm text-center">
+                &copy; 2024 QR Menü PRO. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
